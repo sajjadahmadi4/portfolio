@@ -36,6 +36,10 @@ ul {
     padding-left: 0;
 }
 
+p {
+    color: #5a5a5a;
+}
+
 /* Reusable classes */
 .container {
     width: 80%;
@@ -70,6 +74,12 @@ ul {
     background: black;
     color: white;
 }
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
 /* hero */
 .nav-menu {
     display: flex;
@@ -120,12 +130,54 @@ nav ul li a:hover {
 }
 
 .hero div p {
-    color: #5a5a5a;
     margin-bottom: 2rem;
+}
+
+
+/* About */
+#about {
+    background-color: rgba(184, 184, 184, 0.24);
+    padding: 4rem 0;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-title {
+    font-size: 3rem;
+}
+
+.about-subtitle {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+    padding-right: 2rem;
+}
+
+.about-text-box {
+    border-right: 2px solid white;
 }
 
 @media screen and (max-width: 900px)
 {
+    
+}
+/* Skills */
+
+/* Projects */
+
+/* Contact */
+
+/* Footer */
+
+/* Responsive styles */
+@media screen and (max-width: 900px)
+{
+    /* Hero section */
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
@@ -151,14 +203,19 @@ nav ul li a:hover {
     .btn {
         font-size: .8rem;
     }
+
+    /* About section */
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-subtitle {
+        padding-right: 0;
+    }
+
+    .about-text-box {
+        border: none;
+        border-bottom: 2px solid white;
+        padding-bottom: 2rem;
+    }
 }
-/* About */
-
-/* Skills */
-
-/* Projects */
-
-/* Contact */
-
-/* Footer */
-
