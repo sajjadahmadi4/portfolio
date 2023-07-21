@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sajjad Ahmadi</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <!-- hero -->
-    <header id="top">
-        <a href="#top" class="logo">SAJJAD</a>
-        <nav>
-            <ul>
-                <li><a href="#top">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="container" id="top">
+        <div class="nav-menu">
+            <a href="#top"><img class="logo" src="assets/images/Logo.svg" alt="logo"></a>
+            <nav>
+                <ul>
+                    <li><a class="nav-link" href="#top">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <div class="hero">
-            <img src="assets/images/web-development.png" alt="web development icon" class="title-image">
+            <img src="assets/images/web-development.png" alt="web development icon" class="title-img">
             <div>
                 <h3>WEB DEVELOPER</h3>
                 <h1>SAJJAD <br>AHMADI</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo aliquid reprehenderit maiores non reiciendis quasi consequuntur saepe dolorem molestias?
                 </p>
-                <button class="btn btn-primary">Contact me</button>
-                <button class="btn btn-secondary">See Projects</button>
+                <a href="#contact" class="btn btn-primary">Contact me</a>
+                <a href="#projects" class="btn btn-secondary">See Projects</a>
             </div>
         </div>
     </header>

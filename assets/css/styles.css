@@ -1,6 +1,6 @@
 /* CSS Variables */
 :root {
-    --background-color: linear-gradient(90deg, hsl(229, 56%, 37%) 0%, hsl(207, 41%, 38%) 100%);
+    /* --background-color: linear-gradient(90deg, hsl(229, 56%, 37%) 0%, hsl(207, 41%, 38%) 100%); */
 
     /* colors */
 
@@ -9,12 +9,118 @@
 }
 
 /* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: .2s;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
 
 /* Reusable classes */
+.container {
+    width: 80%;
+    margin: auto;
+}
 
+.btn {
+    background: none;
+    border: none;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: black;
+    border: 2px solid black;
+    color: white;
+    transition: .4s;
+}
+.btn-primary:hover {
+    background: white;
+    color: black;
+}
+
+.btn-secondary {
+    color: black;
+    border: 2px solid black;
+    transition: .4s;
+}
+.btn-secondary:hover {
+    background: black;
+    color: white;
+}
 /* hero */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
 
+.logo {
+    width: 3rem;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a:hover {
+    color: #5a5a5a;
+    border-bottom: 2px solid #5a5a5a;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.title-img {
+    width: 100%;
+    height: auto;
+}
+
+.hero div h3 {
+    font-size: small;
+    font-weight: 300;
+    letter-spacing: .25rem;
+}
+
+.hero div h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.hero div p {
+    color: #5a5a5a;
+    margin-bottom: 1.25rem;
+}
 /* About */
 
 /* Skills */
@@ -25,8 +131,3 @@
 
 /* Footer */
 
-
-/* Responsive breakpoints */
-/* -- small devices */
-/* -- medium devices */
-/* -- large devices */
