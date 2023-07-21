@@ -91,12 +91,14 @@ nav ul {
 nav ul li a:hover {
     color: #5a5a5a;
     border-bottom: 2px solid #5a5a5a;
+    padding-bottom: .25rem;
 }
 
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    align-items: center;
     margin-top: 6rem;
     margin-bottom: 6rem;
 }
@@ -119,7 +121,36 @@ nav ul li a:hover {
 
 .hero div p {
     color: #5a5a5a;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 900px)
+{
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .title-img {
+        width: 60%;
+        margin: auto;
+    }
+
+    .hero div h3 {
+        font-size: .7rem;
+    }
+
+    .hero div h3 {
+        font-size: .7rem;
+    }
+
+    .hero div p {
+        font-size: .8rem;
+    }
+
+    .btn {
+        font-size: .8rem;
+    }
 }
 /* About */
 
