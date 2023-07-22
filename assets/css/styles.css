@@ -158,6 +158,12 @@ nav ul li a:hover {
     padding-right: 2rem;
 }
 
+.about-start-text {
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 600;
+}
+
 /* Skills */
 
 /* Projects */
@@ -204,6 +210,7 @@ nav ul li a:hover {
 
     .about-subtitle {
         padding-right: 0;
+        text-align: center;
     }
 
     .about-title {
@@ -212,6 +219,14 @@ nav ul li a:hover {
 
     .about-subtitle {
         font-size: .9rem;
+    }
+
+    .about-start-text {
+        font-size: 1.4rem;
+    }
+
+    .about-img {
+        width: 70%;
     }
 
     #about {
