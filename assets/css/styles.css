@@ -80,6 +80,9 @@ p {
     height: auto;
 }
 
+.grid {
+    display: grid;
+}
 /* hero */
 .nav-menu {
     display: flex;
@@ -144,7 +147,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .about-title {
@@ -153,7 +156,7 @@ nav ul li a:hover {
 
 .about-subtitle {
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: justify;
     padding-right: 2rem;
 }
@@ -164,7 +167,54 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
-/* Skills */
+.about-img {
+    /* border-radius: .25rem; */
+    border: 3px solid black;
+}
+
+.about-tech-stack {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+}
+
+.about-tech-stack p {
+    color: black;
+}
+
+/* Services */
+#services {
+    padding: 3rem 0;
+    color: white;
+    background-color: black;
+}
+.services-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: .8rem;
+}
+
+.card-img {
+    width: 50%;
+}
+
+.services-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+}
+
 
 /* Projects */
 
@@ -227,10 +277,24 @@ nav ul li a:hover {
 
     .about-img {
         width: 70%;
+        margin-top: 1.5rem;
     }
 
     #about {
         padding-top: 2rem;
         padding-bottom: 1rem;
+    }
+
+    /* services */
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 560px)
+{
+    /* services */
+    .services-grid {
+        grid-template-columns: 1fr;
     }
 }
