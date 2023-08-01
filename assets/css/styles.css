@@ -352,8 +352,43 @@ nav ul li a:hover {
     font-size: 1rem;
 }
 /* Footer */
+#footer {
+    background: black;
+    color: white;
+    padding: 2rem 0;
+}
 
-/* Responsive styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hearts {
+    color: red;
+}
+
+#footer .container p {
+    color: white;
+    font-size: 1rem;
+}
+
+#footer .container ul {
+    display: flex;
+    gap: 1rem;
+}
+
+#footer .container ul li a {
+    color: white;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+#footer .container ul li a:hover {
+    color: #5a5a5a;
+}
+
+/* Responsive breakpoints */
 @media screen and (max-width: 950px)
 {
     .contact-grid {
@@ -440,6 +475,11 @@ nav ul li a:hover {
     /* services */
     .services-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
     }
 }
 
