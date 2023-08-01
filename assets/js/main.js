@@ -1,3 +1,10 @@
+const hamburger = document.querySelector('.hamburger');
+const navLink = document.querySelector('.nav__link');
+
+hamburger.addEventListener('click', () => {
+  navLink.classList.toggle('hide');
+});
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -26,3 +33,5 @@ var swiper = new Swiper(".mySwiper", {
     },
     
   });
+
+ 

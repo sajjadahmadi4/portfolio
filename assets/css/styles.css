@@ -89,28 +89,13 @@ h1, h2, h3, h4 {
     display: grid;
 }
 /* hero */
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-}
+
 
 .logo {
     width: 3rem;
     height: auto;
 }
 
-nav ul {
-    display: flex;
-    gap: 1rem;
-}
-
-nav ul li a:hover {
-    color: #5a5a5a;
-    border-bottom: 2px solid #5a5a5a;
-    padding-bottom: .25rem;
-}
 
 .hero {
     display: grid;
@@ -403,6 +388,17 @@ nav ul li a:hover {
     }
 }
 
+@media screen and (max-width: 800px)
+{
+    .menu {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 700px)
 {
     .contact-right-div {
@@ -492,5 +488,71 @@ nav ul li a:hover {
 
     .contact-right-div {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Navigation menu styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.nav__link {
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    background-color: rgba(184, 184, 184, .9);
+    transition: all .4s ease;
+}
+
+.nav__link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    transition: all .4s ease;
+}
+
+.nav__link a:hover {
+    background-color: black;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 950px)
+{
+    .nav__link {
+        display: flex;
+        position: static;
+        width: auto;
+        gap: 1rem;
+        background: none;
+    }
+
+    .nav__link a {
+        display: inline-block;
+        /* padding: 15px 20px; */
+    }
+
+    .hamburger {
+        display: none;
     }
 }
